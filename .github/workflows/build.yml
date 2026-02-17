@@ -24,6 +24,9 @@ jobs:
           pip install --upgrade pip
           pip install buildozer cython
 
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
       - name: Build with Buildozer
         run: |
           buildozer android debug
