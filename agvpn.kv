@@ -1,0 +1,10 @@
+#:kivy 2.1.0
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+<MainScreen>:
+    canvas.before:
+        Color:
+            rgba: get_color_from_hex('#121212')
+        Rectangle:
+            pos: self.pos
+            size: self.size
